@@ -14,30 +14,30 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += Vector3.forward * speed * Time.deltaTime;
 
         if(Input.GetKeyDown(KeyCode.A))
         {
-            switch (transform.position.z)
+            switch (transform.position.x)
             {
                 case 0f:
-                    transform.position = new Vector3(transform.position.x, transform.position.y, -2);
+                    transform.position = new Vector3(-2, transform.position.y, transform.position.z);
                 break;
                 case 2:
-                    transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+                    transform.position = new Vector3(0, transform.position.y, transform.position.z);
                 break;
             }
         }
 
         if(Input.GetKeyDown(KeyCode.D))
         {
-            switch (transform.position.z)
+            switch (transform.position.x)
             {
                 case 0f:
-                    transform.position = new Vector3(transform.position.x, transform.position.y, 2);
+                    transform.position = new Vector3(2, transform.position.y, transform.position.z);
                 break;
                 case -2:
-                    transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+                    transform.position = new Vector3(0, transform.position.y, transform.position.z);
                 break;
             }
         }
