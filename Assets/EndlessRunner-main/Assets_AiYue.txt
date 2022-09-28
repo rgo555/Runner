@@ -1,0 +1,25 @@
+Amy, high poly example- https://www.mixamo.com/#/?page=1&type=Character
+
+Human, low poly- https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-61922
+
+Low poly nut- https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-3d-animated-nut-brothers-roller-skates-package-217769
+
+Low poly chicken- https://assetstore.unity.com/packages/3d/characters/animals/meshtint-free-chicken-mega-toon-series-151842
+
+Low poly guys- https://assetstore.unity.com/packages/3d/characters/toony-tiny-ww1-soldiers-demo-115694
+
+----------------------------------------
+
+Low poly nature- https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742
+
+Low poly wind- https://assetstore.unity.com/packages/vfx/shaders/low-poly-wind-182586
+
+----------------------------------------
+
+Low poly pack- https://assetstore.unity.com/packages/3d/environments/low-poly-pack-94605
+
+Low poly park- https://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-61922
+
+----------------------------------------
+
+3D text in Unity tutorial- https://www.youtube.com/watch?v=H-IXhTOhKPI
