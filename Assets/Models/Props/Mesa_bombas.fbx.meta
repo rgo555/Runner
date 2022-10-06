@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 29bf244386216884dbd80c094fd3ccbe
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -8668480530158764177
+    second: hw_zhidao210_peijing_01.003|Camera001|Take 001|BaseLayer
+  - first:
+      74: -8879139423870394799
+    second: hw_zhidao210_peijing_01.003|hw_wandaoyou_daolu_01|Take 001|BaseLayer
+  - first:
+      74: -3702358014098548969
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_daolu_01|Take 001|BaseLayer
+  - first:
+      74: 1410470057183174741
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_daolu_02|Take 001|BaseLayer
+  - first:
+      74: -3818241175516015462
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_daolu_03|Take 001|BaseLayer
+  - first:
+      74: 5800080643703950696
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_01|Take 001|BaseLayer
+  - first:
+      74: 3746152017575539587
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_01|Take 001|BaseLayer.001
+  - first:
+      74: 8616635002426350849
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_01|Take 001|BaseLayer.002
+  - first:
+      74: -5161862707162383818
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_01|Take 001|BaseLayer.003
+  - first:
+      74: -793101633023986999
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer
+  - first:
+      74: 8320555544948819137
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer.001
+  - first:
+      74: 1450913298076486572
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer.002
+  - first:
+      74: -457240049985492572
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer.003
+  - first:
+      74: -8631999880240236738
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer.004
+  - first:
+      74: -8099270800373974632
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_02|Take 001|BaseLayer.005
+  - first:
+      74: 1420219445184454757
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_03|Take 001|BaseLayer
+  - first:
+      74: 5286742120737336280
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer
+  - first:
+      74: -6095813511567996498
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer.001
+  - first:
+      74: -810284713565147115
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer.002
+  - first:
+      74: 1134680776931372013
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer.003
+  - first:
+      74: -4011586524993948327
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer.004
+  - first:
+      74: 2708697276002523309
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_04|Take 001|BaseLayer.005
+  - first:
+      74: 9168899505781486620
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_05|Take 001|BaseLayer
+  - first:
+      74: 6346430344229331211
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_05|Take 001|BaseLayer.001
+  - first:
+      74: 4903688085056867505
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_06|Take 001|BaseLayer
+  - first:
+      74: 7446803385832144609
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_06|Take 001|BaseLayer.001
+  - first:
+      74: -520204867686605852
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_06|Take 001|BaseLayer.002
+  - first:
+      74: -1073656304583359960
+    second: hw_zhidao210_peijing_01.003|hw_zhidao210_peijing_06|Take 001|BaseLayer.003
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
