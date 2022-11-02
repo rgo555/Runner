@@ -34,25 +34,34 @@ public class Player : MonoBehaviour
 	void Movement()
 	{
 		Vector3 pos=gameObject.transform.position;
-		if(!line.Equals(targetLine)){
-			if(targetLine==0 && pos.x<-2){
+		if(!line.Equals(targetLine))
+		{
+			if(targetLine==0 && pos.x<-2)
+			{
 				gameObject.transform.position = new Vector3 (-2f,pos.y,pos.z);
 				line = targetLine;
 				dir.x = 0;
 				canmove = true;
-			}else if(targetLine==1 &&  (pos.x>0 ||  pos.x<0)){
-				if(line==0 && pos.x>0){
-					gameObject.transform.position = new Vector3 (0,pos.y,pos.z);
-					line = targetLine;
-					dir.x = 0;
-					canmove = true;
-				}else if(line==2 && pos.x<0){
+			}
+			else if(targetLine==1 &&  (pos.x>0 ||  pos.x<0))
+			{
+				if(line==0 && pos.x>0)
+				{
 					gameObject.transform.position = new Vector3 (0,pos.y,pos.z);
 					line = targetLine;
 					dir.x = 0;
 					canmove = true;
 				}
-			}else if(targetLine==2 &&  pos.x>2){
+				else if(line==2 && pos.x<0)
+				{
+					gameObject.transform.position = new Vector3 (0,pos.y,pos.z);
+					line = targetLine;
+					dir.x = 0;
+					canmove = true;
+				}
+			}
+			else if(targetLine==2 &&  pos.x>2)
+			{
 				gameObject.transform.position = new Vector3 (-2,pos.y,pos.z);
 				line = targetLine;
 				dir.x = 0;
@@ -60,7 +69,8 @@ public class Player : MonoBehaviour
 			}
 		}
 		checkInputs ();
-		if (!controller.isGrounded) {
+		if (!controller.isGrounded) 
+		{
 			dir.y = -4;
 		}
 		controller.Move (new Vector3(dir.x, 0, dir.z * speed) * Time.deltaTime);
@@ -95,9 +105,9 @@ public class Player : MonoBehaviour
 	void Jump()
 	{
 		isGrounded = Physics.CheckSphere(groundSensor.position, sensorradius, ground);
-        if(isGrounded && dir.y < 0){
+        if(isGrounded && dir.y < 0)
+		{
             playervelocity.y = 0;
-
         }
 
         if(Input.GetButtonDown("Jump") && isGrounded)
@@ -119,7 +129,6 @@ public class Player : MonoBehaviour
         //Layer de obstaculos
         if(other.gameObject.layer == 7)
         {
-            
             GameManager.Instance.Choque();
         }
     }
