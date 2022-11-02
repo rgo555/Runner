@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance;
+    
     private AudioSource _audioSourceSFX;
     public AudioClip cuentaRegresiva;
-    public static AudioManager Instance;
+    public AudioClip deathSFX;
 
    
     void Awake()
@@ -30,5 +32,10 @@ public class AudioManager : MonoBehaviour
     public void CuentaRegresivaSound()
     {
         _audioSourceSFX.PlayOneShot(cuentaRegresiva);
+    }
+
+    public void DeathSound()
+    {
+        _audioSourceSFX.PlayOneShot(deathSFX);
     }
 }

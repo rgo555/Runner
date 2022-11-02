@@ -43,4 +43,16 @@ public class GameManager : MonoBehaviour
         //uwu
     }
 
+    public void Choque()
+    {
+        Global.vidas--;
+        AudioManager.Instance.DeathSound();
+        
+        if(Global.vidas == 0)
+        {
+            Debug.Log("Dead");
+
+        }   
+    }
+
 }
