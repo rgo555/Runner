@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
         scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex + 1);
         AudioManager.Instance.CuentaRegresivaSound();
+        SoundManager.Instance.SeleccionAudio(1);
         //uwu
     }
 

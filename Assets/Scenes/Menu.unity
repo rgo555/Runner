@@ -196,7 +196,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -294,6 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cuentaRegresiva: {fileID: 8300000, guid: 8b4ab76c6c9ecc947bf3dceb4820e366, type: 3}
+  deathSFX: {fileID: 0}
 --- !u!4 &156170451
 Transform:
   m_ObjectHideFlags: 0
