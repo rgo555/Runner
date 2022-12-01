@@ -1,34 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     CharacterController controller;
+	Animator anim;
 	Vector3 dir=Vector3.forward;
-	Vector3 playervelocity;
+	[SerializeField]Vector3 playervelocity;
 	bool canmove=true;
 	int line=1;
 	int targetLine=1;
-	public float speed = 10;
-	public float sensorradius = 0.1f;
+	[SerializeField]private float speed = 10;
 	
-	public float jumpforce = 20;
-    public float jumpheight = 1;
-    public float gravity = -9.81f;
-	public Transform groundSensor;
-    public LayerMask ground;
-	public bool isGrounded;
+    [SerializeField]private float jumpheight = 1;
+    [SerializeField]private float gravity = -9.81f;
+	[SerializeField]private Transform groundSensor;
+    [SerializeField]private LayerMask ground;
+	[SerializeField]private float sensorRadius = 0.1f;
+	[SerializeField]private bool isGrounded;
 
 	void Start() 
 	{
 		controller = gameObject.GetComponent<CharacterController> ();
+		anim = GetComponentInChildren<Animator>();
 	}
 
 	void Update() 
 	{
-		Movement();
-		Jump();
+		if(GameManager.Instance.isPlaying)
+		{
+			Movement();
+			Gravity();
+			anim.SetBool("Correr",true);
+		}
 	}
 
 	void Movement()
@@ -78,58 +84,98 @@ public class Player : MonoBehaviour
 
 	void checkInputs()
 	{
-		if(Input.GetKeyDown(KeyCode.LeftArrow) && canmove && line>0 ){
+
+		if(Input.GetKeyDown(KeyCode.LeftArrow)){
 			
 			MoveLeft();
 		}
-		if(Input.GetKeyDown(KeyCode.RightArrow) && canmove && line<2){
+		if(Input.GetKeyDown(KeyCode.RightArrow)){
 
 			MoveRight();
 		}	
 	}
 
-    void MoveLeft()
+    public void MoveLeft()
 	{
-		targetLine--;
-		canmove = false;
-		dir.x = -4f;
+		if(canmove && line>0)
+		{
+			targetLine--;
+			canmove = false;
+			dir.x = -4f;
+		}
 	}
 
-	void MoveRight()
+	public void MoveRight()
 	{
-		targetLine++;
-		canmove = false;
-		dir.x = 4f;
+		if(canmove && line<2)
+		{
+			targetLine++;
+			canmove = false;
+			dir.x = 4f;
+		}
 	}
 
-	void Jump()
+	void Gravity()
 	{
-		isGrounded = Physics.CheckSphere(groundSensor.position, sensorradius, ground);
+		isGrounded = Physics.CheckSphere(groundSensor.position, sensorRadius, ground);
+
         if(isGrounded && dir.y < 0)
 		{
-            playervelocity.y = 0;
+           playervelocity.y = 0;	
+		   anim.SetBool("Jump",false);	   
         }
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+		
+
+        if(Input.GetButtonDown("Jump"))
 		{
-            playervelocity.y += Mathf.Sqrt(jumpheight * -2.0f * gravity);
-
+            Jump();
         }
-        playervelocity.y += gravity * Time.deltaTime;
+
+
+		if(!isGrounded)
+		{
+			playervelocity.y += gravity * Time.deltaTime;
+		}
+		
         controller.Move(playervelocity* Time.deltaTime);
+	}
+
+	public void Jump()
+	{
+		if(isGrounded)
+		{
+			playervelocity.y += Mathf.Sqrt(jumpheight * -2.0f * gravity);
+			anim.SetBool("Jump", true);
+			Debug.Log("You have clicked the button!");
+			controller.Move(playervelocity* Time.deltaTime);
+		}
 	}
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.CompareTag("FinishLine"))
-        {
-            GameManager.Instance.LevelFinisher();
-        }
-
         //Layer de obstaculos
         if(other.gameObject.layer == 7)
         {
             GameManager.Instance.Choque();
+			if(Global.vidas == 0)
+			{
+				anim.SetTrigger("Dead");
+			}
+        }
+		if(other.gameObject.CompareTag("Finish"))
+        {
+			GameManager.Instance.isPlaying = false;
+			/*if(Global.nivelMaximo == 1)
+			{
+				
+				GameManager.Instance.LevelFinisher();
+			}*/
         }
     }
+
+	void OnDrawGizmos()
+	{
+		Gizmos.DrawWireSphere(groundSensor.position, sensorRadius);
+	}
 }
