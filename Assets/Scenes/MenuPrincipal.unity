@@ -437,7 +437,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85197523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 345}
+  m_LocalPosition: {x: 0, y: 0, z: -973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1108,10 +1108,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 782418966}
+      - m_Target: {fileID: 782418969}
         m_TargetAssemblyTypeName: AudioSettings, Assembly-CSharp
         m_MethodName: ChangeMusicVolume
-        m_Mode: 0
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 353619442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7583fa46405ef064097cc91abb87477c, type: 3}
+  m_Script: {fileID: 11500000, guid: ff9b7463d79a878489a1836803732bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
@@ -1409,7 +1409,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259895}
+      - m_Target: {fileID: 654043092}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -1549,8 +1549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654043090}
   - component: {fileID: 654043089}
-  - component: {fileID: 654043088}
-  - component: {fileID: 654043091}
+  - component: {fileID: 654043093}
   - component: {fileID: 654043092}
   m_Layer: 0
   m_Name: SFXManager
@@ -1559,21 +1558,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &654043088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654043086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75658978726218d4890f02cfab5a74c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 2074291549}
-  sliderValue: 0
-  imagenMute: {fileID: 1667210471}
 --- !u!82 &654043089
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1685,22 +1669,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &654043091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654043086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd6996713151534bae1756353641299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicVolume: 0
-  sfxVolume: 0
-  musicAudioSourcesCount: 0
-  sfxAudioSourcesCount: 0
 --- !u!114 &654043092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,7 +1678,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 654043086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c62b98620af1d54eac150c33e44f942, type: 3}
+  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 2074291549}
+  sliderValue: 0
+  imagenMute: {fileID: 603891366}
+--- !u!114 &654043093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654043086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee9c65b32615e94e8075758c5a90efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &674354462
@@ -1914,7 +1897,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259895}
+      - m_Target: {fileID: 654043092}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -1935,7 +1918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782418967}
-  - component: {fileID: 782418966}
+  - component: {fileID: 782418969}
   - component: {fileID: 782418968}
   m_Layer: 0
   m_Name: AudioSettings
@@ -1944,22 +1927,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &782418966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782418965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffd6996713151534bae1756353641299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicVolume: 0
-  sfxVolume: 0
-  musicAudioSourcesCount: 0
-  sfxAudioSourcesCount: 0
 --- !u!4 &782418967
 Transform:
   m_ObjectHideFlags: 0
@@ -1984,11 +1951,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 782418965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9747a33739674bc4e81b7399f52807be, type: 3}
+  m_Script: {fileID: 11500000, guid: 8783895a67d9d26448567b067277cfe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 2074291549}
   volumeTextUI: {fileID: 0}
+--- !u!114 &782418969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782418965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df06dc3c43ed934cab8ddfec1061a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVolume: 0
+  sfxVolume: 0
+  musicAudioSourcesCount: 0
+  sfxAudioSourcesCount: 0
 --- !u!64 &857363632
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2600,7 +2583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1169551845}
-  - component: {fileID: 1169551844}
+  - component: {fileID: 1169551846}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -2608,21 +2591,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1169551844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169551843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0707a4ef9dc741743ba7c1b117784736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Titulo: {fileID: 243600770}
-  BotonesMenu: {fileID: 1969988785}
-  OptionsMenu: {fileID: 85197523}
 --- !u!4 &1169551845
 Transform:
   m_ObjectHideFlags: 0
@@ -2638,6 +2606,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1169551846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169551843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4dc0bf140718041a30dcaa1bcd4146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titulo: {fileID: 243600770}
+  BotonesMenu: {fileID: 1969988785}
+  OptionsMenu: {fileID: 85197523}
 --- !u!1 &1191242811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,7 +2912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169551844}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -3100,7 +3083,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259895}
+      - m_Target: {fileID: 1523259899}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -3202,7 +3185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523259897}
   - component: {fileID: 1523259896}
-  - component: {fileID: 1523259895}
+  - component: {fileID: 1523259899}
   - component: {fileID: 1523259898}
   m_Layer: 0
   m_Name: AudioManager
@@ -3211,21 +3194,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1523259895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523259894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75658978726218d4890f02cfab5a74c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 353619444}
-  sliderValue: 0
-  imagenMute: {fileID: 1667210471}
 --- !u!82 &1523259896
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3346,9 +3314,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1523259894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 165bed9065047ca459bafc3fa40a6e30, type: 3}
+  m_Script: {fileID: 11500000, guid: 428b05e533d221742ae31a0cca3800f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1523259899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523259894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 353619444}
+  sliderValue: 0
+  imagenMute: {fileID: 1667210471}
 --- !u!1 &1602312590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,7 +3498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259895}
+      - m_Target: {fileID: 1523259899}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -4226,17 +4209,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1169551844}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: OpenOptions
-        m_Mode: 1
+      - m_Target: {fileID: 85197523}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 56145886}
         m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
@@ -4351,7 +4334,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969988785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1213}
+  m_LocalPosition: {x: 0, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4363,7 +4346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.095093, y: -174}
+  m_AnchoredPosition: {x: 50.095093, y: -213}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969988787
@@ -4577,10 +4560,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 654043091}
+      - m_Target: {fileID: 782418969}
         m_TargetAssemblyTypeName: AudioSettings, Assembly-CSharp
         m_MethodName: ChangSFXVolume
-        m_Mode: 0
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4598,7 +4581,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2074291547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7583fa46405ef064097cc91abb87477c, type: 3}
+  m_Script: {fileID: 11500000, guid: ff9b7463d79a878489a1836803732bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
