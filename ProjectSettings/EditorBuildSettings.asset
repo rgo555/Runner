@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Splash_screen2.unity
     guid: efc7061868aeac24a96483e886359e56
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: cecd5d0a05e97bd4caebc1bf0d6ab088
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 00339c16cf192c84ab839b61841ad395
   - enabled: 1
     path: Assets/Scenes/Niveles/AdaiaLeonScene.unity
     guid: 6a1f776fda4322c4da4afa2f1c649bb7

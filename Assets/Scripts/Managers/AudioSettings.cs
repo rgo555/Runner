@@ -12,8 +12,8 @@ public class AudioSettings : MonoBehaviour
     [SerializeField]
     private float sfxVolume;
 
-    float musicDefaultVolume=0.7f;
-    float sfxDefaultVolume = 0.9f;
+    float musicDefaultVolume = 1f;
+    float sfxDefaultVolume = 1f;
 
     string musicAudioSourcesTag ="Music-AudioSource";
     string sfxAudioSourcesTag="SFX-AudioSource";

@@ -8,17 +8,17 @@ public class LogicaVolumen : MonoBehaviour
     public Slider slider;
     public float sliderValue;
     public GameObject imagenMute;
-    private AudioSource audioSource;
+    [SerializeField]private AudioSource audioSource;
     private bool isMuted = false;
     
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         slider.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
         AudioListener.volume = slider.value;
 
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class LogicaVolumen : MonoBehaviour
     {
         sliderValue = slider.value;
         PlayerPrefs.SetFloat("volumenAudio", sliderValue);
-        audioSource.volume = slider.value;
+        audioSource.volume = sliderValue;
     }
 
     public void RevisarSiEstoyMute()

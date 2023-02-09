@@ -20,4 +20,14 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("EscenaLorenaNueva");
     }
+
+    public void StartGame()
+    {
+        GameManager.Instance.LevelFinisher();
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
