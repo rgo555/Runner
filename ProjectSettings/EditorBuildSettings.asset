@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 00339c16cf192c84ab839b61841ad395
   - enabled: 1
-    path: Assets/Scenes/Niveles/AdaiaLeonScene.unity
-    guid: 6a1f776fda4322c4da4afa2f1c649bb7
+    path: Assets/Scenes/Niveles/Escena Nueva Lorena.unity
+    guid: f952bf820d654b54b9f94c4071c0ae8a
   m_configObjects: {}

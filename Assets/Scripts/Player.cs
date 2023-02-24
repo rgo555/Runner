@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 		{
 			Movement();
 			Gravity();
-			anim.SetBool("Correr",true);
+			//anim.SetBool("Correr",true);
 		}
 	}
 

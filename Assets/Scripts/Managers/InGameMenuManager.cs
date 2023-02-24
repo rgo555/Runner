@@ -7,7 +7,7 @@ public class InGameMenuManager : MonoBehaviour
 {
     public static InGameMenuManager Instance;
 
-    public GameObject restartButton;
+    //public GameObject restartButton;
     // Start is called before the first frame update
     void Awake()
     {

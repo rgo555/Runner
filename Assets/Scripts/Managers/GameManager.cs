@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     {
         if(Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
         Global.nivelMaximo ++;
         scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.buildIndex + 1);
-        AudioManager.Instance.CuentaRegresivaSound();
+        SFXManager.Instance.CuentaRegresivaSound();
         SoundManager.Instance.SeleccionAudio(1);
         //uwu
     }
@@ -50,20 +50,20 @@ public class GameManager : MonoBehaviour
     public void Choque()
     {
         Global.vidas--;
-        AudioManager.Instance.DeathSound();
+        SFXManager.Instance.DeathSound();
         
         if(Global.vidas == 0)
         {
             Debug.Log("Dead");
             isPlaying = false;
-            InGameMenuManager.Instance.restartButton.SetActive(true);
+            //InGameMenuManager.Instance.restartButton.SetActive(true);
         }   
     }
 
     public void AddCoins()
     {
         Global.numberCoins += 1;
-        AudioManager.Instance.CoinSFX();
+        SFXManager.Instance.CoinSFX();
     }
 
 }

@@ -24,6 +24,8 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         controlAudio = GetComponent<AudioSource>();
+
+        SeleccionAudio(0);
     }
 
     public void SeleccionAudio (int indice)

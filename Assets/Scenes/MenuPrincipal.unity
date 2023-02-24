@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0b24d590d2c0fb44ea70adfc5ec81def, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1118,19 +1118,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1523259899}
-        m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
-        m_MethodName: ChangeSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &471601046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1395,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 654043092}
+      - m_Target: {fileID: 1169551847}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -1547,7 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654043090}
   - component: {fileID: 654043089}
-  - component: {fileID: 654043092}
+  - component: {fileID: 654043093}
   m_Layer: 0
   m_Name: SFXManager
   m_TagString: Untagged
@@ -1666,7 +1654,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &654043092
+--- !u!114 &654043093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1675,13 +1663,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 654043086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Script: {fileID: 11500000, guid: ed73b6cca4f9a5a4b9e2d6023fc0a47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 2074291549}
-  sliderValue: 1
-  imagenMute: {fileID: 603891366}
-  audioSource: {fileID: 654043089}
+  cuentaRegresiva: {fileID: 8300000, guid: 8b4ab76c6c9ecc947bf3dceb4820e366, type: 3}
+  deathSFX: {fileID: 8300000, guid: c57d4d675b24db2449a349e796de6397, type: 3}
+  coinSFX: {fileID: 8300000, guid: 3a532273ad477d747984a0823f50de41, type: 3}
+--- !u!1 &654392765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 654392767}
+  - component: {fileID: 654392766}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &654392766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654392765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9574ee5698f81438b4b91f9ceb26e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaying: 0
+--- !u!4 &654392767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654392765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5917969, y: -2.9750977, z: -3.0391235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674354462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1915,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 654043092}
+      - m_Target: {fileID: 1169551847}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -2507,8 +2539,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1169551845}
   - component: {fileID: 1169551846}
+  - component: {fileID: 1169551848}
+  - component: {fileID: 1169551847}
   m_Layer: 0
-  m_Name: MenuManager
+  m_Name: MenuManagers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2544,6 +2578,40 @@ MonoBehaviour:
   Titulo: {fileID: 243600770}
   BotonesMenu: {fileID: 1969988785}
   OptionsMenu: {fileID: 85197523}
+--- !u!114 &1169551847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169551843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 2074291549}
+  sliderValue: 0
+  imagenMute: {fileID: 603891366}
+  audioSource: {fileID: 0}
+  SFX: 1
+--- !u!114 &1169551848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169551843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 353619444}
+  sliderValue: 0
+  imagenMute: {fileID: 1667210471}
+  audioSource: {fileID: 0}
+  SFX: 0
 --- !u!1 &1191242811
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,7 +3074,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259899}
+      - m_Target: {fileID: 1169551848}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -3108,7 +3176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523259897}
   - component: {fileID: 1523259896}
-  - component: {fileID: 1523259899}
+  - component: {fileID: 1523259900}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -3227,7 +3295,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1523259899
+--- !u!114 &1523259900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3236,13 +3304,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1523259894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 961b9ae58a5e8bd4bb1d1cc90b914311, type: 3}
+  m_Script: {fileID: 11500000, guid: d1b0a9361131c2f43b27f012f5c2e744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 353619444}
-  sliderValue: 1
-  imagenMute: {fileID: 1667210471}
-  audioSource: {fileID: 1523259896}
+  audios:
+  - {fileID: 8300000, guid: 4399fce0d6ac54045881ca0cf7c0d998, type: 3}
+  - {fileID: 8300000, guid: fa8027ff676c1ee4baaa30617943e1c5, type: 3}
 --- !u!1 &1602312590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,7 +3476,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523259899}
+      - m_Target: {fileID: 1169551848}
         m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
         m_MethodName: RevisarSiEstoyMute
         m_Mode: 1
@@ -4469,19 +4536,7 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 654043092}
-        m_TargetAssemblyTypeName: LogicaVolumen, Assembly-CSharp
-        m_MethodName: ChangeSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2101588262
 GameObject:
   m_ObjectHideFlags: 0
