@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
         SFXManager.Instance.CuentaRegresivaSound();
         SoundManager.Instance.SeleccionAudio(1);
         //uwu
+        PlayerPrefs.SetInt("LevelMax",Global.nivelMaximo);
     }
 
     public void Choque()

@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject Titulo;
     public GameObject BotonesMenu;
     public GameObject OptionsMenu;
+    public GameObject PlayMenu;
 
     public void OpenOptions()
     {
@@ -16,14 +17,26 @@ public class MenuManager : MonoBehaviour
         OptionsMenu.SetActive(true);
     }
 
+    public void OpenLevels()
+    {
+        Titulo.SetActive(false);
+        BotonesMenu.SetActive(false);
+        PlayMenu.SetActive(true);
+    }
+
     public void LoadScene()
     {
-        SceneManager.LoadScene("EscenaLorenaNueva");
+        Global.nivelMaximo = PlayerPrefs.GetInt("LevelMax");
+        SceneManager.LoadScene(Global.nivelMaximo);
+
     }
 
     public void StartGame()
     {
-        GameManager.Instance.LevelFinisher();
+        //GameManager.Instance.LevelFinisher();
+        Global.nivelMaximo = 3;
+        SceneManager.LoadScene(Global.nivelMaximo);
+        PlayerPrefs.SetInt("LevelMax",Global.nivelMaximo);
     }
 
     public void QuitGame()

@@ -166,11 +166,13 @@ public class Player : MonoBehaviour
 		if(other.gameObject.CompareTag("Finish"))
         {
 			GameManager.Instance.isPlaying = false;
-			/*if(Global.nivelMaximo == 1)
-			{
+		
+			
 				
-				GameManager.Instance.LevelFinisher();
-			}*/
+			GameManager.Instance.LevelFinisher();
+		
+
+
         }
     }
 
