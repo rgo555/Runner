@@ -12,6 +12,7 @@ public class SFXManager : MonoBehaviour
     public AudioClip cuentaRegresiva;
     public AudioClip deathSFX;
     public AudioClip coinSFX;
+    public AudioClip hitSFX;
 
    
     void Awake()
@@ -44,5 +45,10 @@ public class SFXManager : MonoBehaviour
     public void CoinSFX()
     {
         _audioSourceSFX.PlayOneShot(coinSFX);
+    }
+
+    public void HitSFX()
+    {
+        _audioSourceSFX.PlayOneShot(hitSFX);
     }
 }

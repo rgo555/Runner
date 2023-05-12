@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 119174042}
   - component: {fileID: 119174041}
   m_Layer: 5
-  m_Name: Next
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,6 +1937,7 @@ MonoBehaviour:
   cuentaRegresiva: {fileID: 8300000, guid: 8b4ab76c6c9ecc947bf3dceb4820e366, type: 3}
   deathSFX: {fileID: 8300000, guid: c57d4d675b24db2449a349e796de6397, type: 3}
   coinSFX: {fileID: 8300000, guid: 3a532273ad477d747984a0823f50de41, type: 3}
+  hitSFX: {fileID: 8300000, guid: 59a506ad8e0998d4aba014b62f608b2f, type: 3}
 --- !u!1 &654392765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,14 +4000,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 32
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESET
+  m_Text: RESTART
 --- !u!222 &1642259359
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4878,7 +4879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEXT
+  m_Text: PLAY
 --- !u!222 &1846501923
 CanvasRenderer:
   m_ObjectHideFlags: 0

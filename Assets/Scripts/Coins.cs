@@ -6,11 +6,17 @@ public class Coins : MonoBehaviour
 {
     private float speed = 100f;
 
+    public GameObject particleEffect;
+
     private void OnTriggerEnter(Collider collision)
     {        
         if (collision.gameObject.tag == "Player")
         {
+            SFXManager.Instance.CoinSFX();
+
             GameManager.Instance.AddCoins();
+
+            Instantiate(particleEffect, transform.position, Quaternion.identity);
 
             Destroy(gameObject);
         }

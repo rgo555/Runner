@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 	[SerializeField]private float sensorRadius = 0.1f;
 	[SerializeField]private bool isGrounded;
 
+	public GameObject particleEffect;
+
 	void Start() 
 	{
 		controller = gameObject.GetComponent<CharacterController> ();
@@ -33,7 +35,7 @@ public class Player : MonoBehaviour
 		{
 			Movement();
 			Gravity();
-			//anim.SetBool("Correr",true);
+			anim.SetBool("Correr",true);
 		}
 	}
 
@@ -158,6 +160,8 @@ public class Player : MonoBehaviour
         if(other.gameObject.layer == 7)
         {
             GameManager.Instance.Choque();
+			//SFXManager.Instance.HitSFX();
+			Instantiate(particleEffect, transform.position, Quaternion.identity);
 			if(Global.vidas == 0)
 			{
 				anim.SetTrigger("Dead");
